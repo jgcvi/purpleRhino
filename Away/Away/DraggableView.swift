@@ -29,6 +29,10 @@ class DraggableView: UIView {
     var information: UILabel!
     var xFromCenter: Float!
     var yFromCenter: Float!
+    
+    //Added elements
+    var imageFrame : UIImageView!
+    var image : UIImage!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -38,17 +42,25 @@ class DraggableView: UIView {
         super.init(frame: frame)
 
         self.setupView()
-
+        
         information = UILabel(frame: CGRectMake(0, 50, self.frame.size.width, 100))
         information.text = "no info given"
         information.textAlignment = NSTextAlignment.Center
         information.textColor = UIColor.blackColor()
+        
+        //Setup for draggable view image
+        image = UIImage(named: "roatan.jpg")
+        imageFrame = UIImageView(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height))
+        imageFrame.image = image
 
         self.backgroundColor = UIColor.whiteColor()
 
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "beingDragged:")
 
         self.addGestureRecognizer(panGestureRecognizer)
+        
+        self.addSubview(imageFrame)
+        
         self.addSubview(information)
 
         overlayView = OverlayView(frame: CGRectMake(self.frame.size.width/2-100, 0, 100, 100))
