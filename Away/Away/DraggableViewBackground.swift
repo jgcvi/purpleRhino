@@ -14,8 +14,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     var allCards: [DraggableView]!
 
     let MAX_BUFFER_SIZE = 2
-    let CARD_HEIGHT: CGFloat = 386
-    let CARD_WIDTH: CGFloat = 290
+    let CARD_HEIGHT: CGFloat = 490
+    let CARD_WIDTH: CGFloat = 340
 
     var cardsLoadedIndex: Int!
     var loadedCards: [DraggableView]!
