@@ -13,6 +13,10 @@
 		83F2C6071D74CEEE00E860A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F2C6061D74CEEE00E860A3 /* Assets.xcassets */; };
 		83F2C60A1D74CEEE00E860A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F2C6081D74CEEE00E860A3 /* LaunchScreen.storyboard */; };
 		83F2C6151D74CEEE00E860A3 /* AwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2C6141D74CEEE00E860A3 /* AwayTests.swift */; };
+		B546B5651D74D20200F7F6DE /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546B5621D74D20200F7F6DE /* DraggableView.swift */; };
+		B546B5661D74D20200F7F6DE /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546B5631D74D20200F7F6DE /* DraggableViewBackground.swift */; };
+		B546B5671D74D20200F7F6DE /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546B5641D74D20200F7F6DE /* OverlayView.swift */; };
+		B546B5691D74D2D800F7F6DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B546B5681D74D2D800F7F6DE /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		83F2C6101D74CEEE00E860A3 /* AwayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2C6141D74CEEE00E860A3 /* AwayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwayTests.swift; sourceTree = "<group>"; };
 		83F2C6161D74CEEE00E860A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B546B5621D74D20200F7F6DE /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		B546B5631D74D20200F7F6DE /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
+		B546B5641D74D20200F7F6DE /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		B546B5681D74D2D800F7F6DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		83F2C5FE1D74CEEE00E860A3 /* Away */ = {
 			isa = PBXGroup;
 			children = (
+				B546B56A1D74D30800F7F6DE /* TinderSwipe */,
+				B546B5681D74D2D800F7F6DE /* Images.xcassets */,
 				83F2C5FF1D74CEEE00E860A3 /* AppDelegate.swift */,
 				83F2C6011D74CEEE00E860A3 /* ViewController.swift */,
 				83F2C6031D74CEEE00E860A3 /* Main.storyboard */,
@@ -94,6 +104,16 @@
 				83F2C6161D74CEEE00E860A3 /* Info.plist */,
 			);
 			path = AwayTests;
+			sourceTree = "<group>";
+		};
+		B546B56A1D74D30800F7F6DE /* TinderSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				B546B5641D74D20200F7F6DE /* OverlayView.swift */,
+				B546B5621D74D20200F7F6DE /* DraggableView.swift */,
+				B546B5631D74D20200F7F6DE /* DraggableViewBackground.swift */,
+			);
+			name = TinderSwipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F2C60A1D74CEEE00E860A3 /* LaunchScreen.storyboard in Resources */,
+				B546B5691D74D2D800F7F6DE /* Images.xcassets in Resources */,
 				83F2C6071D74CEEE00E860A3 /* Assets.xcassets in Resources */,
 				83F2C6051D74CEEE00E860A3 /* Main.storyboard in Resources */,
 			);
@@ -197,8 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B546B5661D74D20200F7F6DE /* DraggableViewBackground.swift in Sources */,
+				B546B5651D74D20200F7F6DE /* DraggableView.swift in Sources */,
 				83F2C6021D74CEEE00E860A3 /* ViewController.swift in Sources */,
 				83F2C6001D74CEEE00E860A3 /* AppDelegate.swift in Sources */,
+				B546B5671D74D20200F7F6DE /* OverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +412,7 @@
 				83F2C61B1D74CEEE00E860A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F2C61C1D74CEEE00E860A3 /* Build configuration list for PBXNativeTarget "AwayTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +421,7 @@
 				83F2C61E1D74CEEE00E860A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
