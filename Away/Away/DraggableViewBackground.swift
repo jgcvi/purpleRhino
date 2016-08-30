@@ -32,7 +32,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         super.init(frame: frame)
         super.layoutSubviews()
         self.setupView()
-        exampleCardLabels = ["first", "second", "third", "fourth", "last"]
+        exampleCardLabels = ["Roatan", "Maui", "Victoria", "Beijing", "Orlando"]
         allCards = []
         loadedCards = []
         cardsLoadedIndex = 0

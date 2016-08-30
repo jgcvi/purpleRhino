@@ -4,13 +4,13 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "0101145EE60614032F5C13E0D3B61E576187405C" : 0,
-    "DB2C02AE6054FF626B437245F535DA2E10B66B71" : 0
+    "022654B8B7F9637095A422CDF9F790820E5EE06B" : 0,
+    "0101145EE60614032F5C13E0D3B61E576187405C" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C840BD9E-8E28-48E7-8E6F-6C8F02C121BF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "0101145EE60614032F5C13E0D3B61E576187405C" : "purpleRhino\/",
-    "DB2C02AE6054FF626B437245F535DA2E10B66B71" : ""
+    "022654B8B7F9637095A422CDF9F790820E5EE06B" : "",
+    "0101145EE60614032F5C13E0D3B61E576187405C" : "purpleRhino\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Away",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -24,7 +24,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/stash.aexp.com\/stash\/scm\/ci\/soapyhrhack.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DB2C02AE6054FF626B437245F535DA2E10B66B71"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "022654B8B7F9637095A422CDF9F790820E5EE06B"
     }
   ]
 }

@@ -43,10 +43,12 @@ class DraggableView: UIView {
 
         self.setupView()
         
-        information = UILabel(frame: CGRectMake(0, 50, self.frame.size.width, 100))
+        information = UILabel(frame: CGRectMake(0, self.frame.size.height - 50, self.frame.size.width, 75))
         information.text = "no info given"
-        information.textAlignment = NSTextAlignment.Center
+        information.textAlignment = NSTextAlignment.Left
         information.textColor = UIColor.blackColor()
+        information.backgroundColor = UIColor.whiteColor()
+        information.alpha = 0.4
         
         //Setup for draggable view image
         image = UIImage(named: "roatan.jpg")
@@ -72,10 +74,11 @@ class DraggableView: UIView {
     }
 
     func setupView() -> Void {
-        self.layer.cornerRadius = 4;
+        self.layer.cornerRadius = 10;
         self.layer.shadowRadius = 3;
         self.layer.shadowOpacity = 0.2;
         self.layer.shadowOffset = CGSizeMake(1, 1);
+        self.clipsToBounds = true
     }
 
     func beingDragged(gestureRecognizer: UIPanGestureRecognizer) -> Void {
