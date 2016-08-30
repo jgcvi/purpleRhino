@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833551A41D75FE6100292AFF /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833551A31D75FE6100292AFF /* TripDetailsViewController.swift */; };
 		83F2C6001D74CEEE00E860A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2C5FF1D74CEEE00E860A3 /* AppDelegate.swift */; };
 		83F2C6021D74CEEE00E860A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F2C6011D74CEEE00E860A3 /* ViewController.swift */; };
 		83F2C6051D74CEEE00E860A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F2C6031D74CEEE00E860A3 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833551A31D75FE6100292AFF /* TripDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
 		83F2C5FC1D74CEEE00E860A3 /* Away.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Away.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F2C5FF1D74CEEE00E860A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83F2C6011D74CEEE00E860A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				B546B56A1D74D30800F7F6DE /* TinderSwipe */,
 				B546B5681D74D2D800F7F6DE /* Images.xcassets */,
 				83F2C5FF1D74CEEE00E860A3 /* AppDelegate.swift */,
+				833551A31D75FE6100292AFF /* TripDetailsViewController.swift */,
 				83F2C6011D74CEEE00E860A3 /* ViewController.swift */,
 				83F2C6031D74CEEE00E860A3 /* Main.storyboard */,
 				83F2C6061D74CEEE00E860A3 /* Assets.xcassets */,
@@ -220,6 +223,7 @@
 			files = (
 				B546B5661D74D20200F7F6DE /* DraggableViewBackground.swift in Sources */,
 				B546B5651D74D20200F7F6DE /* DraggableView.swift in Sources */,
+				833551A41D75FE6100292AFF /* TripDetailsViewController.swift in Sources */,
 				83F2C6021D74CEEE00E860A3 /* ViewController.swift in Sources */,
 				83F2C6001D74CEEE00E860A3 /* AppDelegate.swift in Sources */,
 				B546B5671D74D20200F7F6DE /* OverlayView.swift in Sources */,

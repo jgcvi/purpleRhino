@@ -32,7 +32,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         super.init(frame: frame)
         super.layoutSubviews()
         self.setupView()
-        exampleCardLabels = ["Roatan", "Maui", "Victoria", "Beijing", "Orlando"]
+        exampleCardLabels = ["Greenville", "Nashville", "Roatan", "Shanghai"]
         allCards = []
         loadedCards = []
         cardsLoadedIndex = 0
@@ -56,7 +56,8 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
 
     func createDraggableViewWithDataAtIndex(index: NSInteger) -> DraggableView {
         let draggableView = DraggableView(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT))
-        draggableView.information.text = exampleCardLabels[index]
+//        draggableView.information.text = exampleCardLabels[index]
+        draggableView.imageFrame.image = UIImage(named: exampleCardLabels[index] + ".png")
         draggableView.delegate = self
         return draggableView
     }

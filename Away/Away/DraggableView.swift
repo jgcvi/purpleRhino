@@ -24,6 +24,7 @@ protocol DraggableViewDelegate {
 class DraggableView: UIView {
     var delegate: DraggableViewDelegate!
     var panGestureRecognizer: UIPanGestureRecognizer!
+    var tapGestureRecognizer: UITapGestureRecognizer!
     var originPoint: CGPoint!
     var overlayView: OverlayView!
     var information: UILabel!
@@ -44,21 +45,25 @@ class DraggableView: UIView {
         self.setupView()
         
         information = UILabel(frame: CGRectMake(0, self.frame.size.height - 50, self.frame.size.width, 75))
-        information.text = "no info given"
+//        information.text = "no info given"
         information.textAlignment = NSTextAlignment.Left
         information.textColor = UIColor.blackColor()
         information.backgroundColor = UIColor.whiteColor()
         information.alpha = 0.4
         
         //Setup for draggable view image
-        image = UIImage(named: "roatan.jpg")
+//        image = UIImage(named: "Greenville.png")
         imageFrame = UIImageView(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height))
+        imageFrame.userInteractionEnabled = true
         imageFrame.image = image
+        imageFrame.tag = 10
+        imageFrame.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "didTapImageView:"))
 
         self.backgroundColor = UIColor.whiteColor()
 
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "beingDragged:")
 
+//        self.addGestureRecognizer(tapGestureRecognizer)
         self.addGestureRecognizer(panGestureRecognizer)
         
         self.addSubview(imageFrame)
@@ -79,6 +84,11 @@ class DraggableView: UIView {
         self.layer.shadowOpacity = 0.2;
         self.layer.shadowOffset = CGSizeMake(1, 1);
         self.clipsToBounds = true
+    }
+    
+    func didTapImageView(tap: UITapGestureRecognizer) {
+        let selectedImage = tap.view?.viewWithTag(10) as? UIImageView
+        
     }
 
     func beingDragged(gestureRecognizer: UIPanGestureRecognizer) -> Void {
